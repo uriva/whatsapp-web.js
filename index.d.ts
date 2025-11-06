@@ -2,7 +2,7 @@
 import { EventEmitter } from 'events'
 import { RequestInit } from 'node-fetch'
 import * as puppeteer from 'puppeteer'
-import InterfaceController from './src/util/InterfaceController'
+import InterfaceController from './src/util/InterfaceController.js'
 
 declare namespace WAWebJS {
 
@@ -1300,7 +1300,7 @@ declare namespace WAWebJS {
             messageSecret?: string;
         };
 
-        constructor(name: string, startTime: Date, options?: EventSendOptions)
+        constructor(name: string, startTime: Date, options?: any)
     }
 
     /** Represents a Poll Vote on WhatsApp */
@@ -2236,4 +2236,4 @@ declare namespace WAWebJS {
     }
 }
 
-export = WAWebJS
+export default WAWebJS

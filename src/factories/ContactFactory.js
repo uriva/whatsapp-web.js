@@ -1,7 +1,7 @@
 'use strict';
 
-const PrivateContact = require('../structures/PrivateContact');
-const BusinessContact = require('../structures/BusinessContact');
+const PrivateContact = require("../structures/PrivateContact.js");
+const BusinessContact = require("../structures/BusinessContact.js");
 
 class ContactFactory {
     static create(client, data) {

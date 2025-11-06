@@ -1,5 +1,4 @@
-const fetch = require('node-fetch');
-const { WebCache, VersionResolveError } = require('./WebCache');
+const { WebCache, VersionResolveError } = require("./WebCache.js");
 
 /**
  * RemoteWebCache - Fetches a WhatsApp Web version index from a remote server

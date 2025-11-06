@@ -1,7 +1,7 @@
 const path = require('path');
 const fs = require('fs');
 
-const { WebCache, VersionResolveError } = require('./WebCache');
+const { WebCache, VersionResolveError } = require('./WebCache.js');
 
 /**
  * LocalWebCache - Fetches a WhatsApp Web version from a local file store
