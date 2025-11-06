@@ -1,3 +1,4 @@
+const fs = require('fs');
 const path = require('path');
 const { Client, LegacySessionAuth, LocalAuth } = require('..');
 
@@ -25,7 +26,8 @@ function getSessionFromEnv() {
     const envSessionPath = process.env.WWEBJS_TEST_SESSION_PATH;
     if(envSessionPath) {
         const absPath = path.resolve(process.cwd(), envSessionPath);
-        return require(absPath);
+        const fileContent = fs.readFileSync(absPath, 'utf-8');
+        return JSON.parse(fileContent);
     }
 }
 

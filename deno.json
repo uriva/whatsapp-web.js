@@ -1,5 +1,5 @@
 {
-  "name": "@uri/whatsapp-web.js",
+  "name": "@uri/whatsapp-web",
   "version": "0.0.1",
   "description": "Library for interacting with the WhatsApp Web API",
   "nodeModulesDir": "auto",
